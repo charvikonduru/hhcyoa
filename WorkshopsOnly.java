@@ -31,6 +31,10 @@ public class WorkshopsOnly extends JFrame {
             buttonPanel.setOpaque(false);
 
             JButton workshop1Button = new JButton("Workshop 1");
+            JButton workshop2Button = new JButton("Workshop 2");
+            JButton workshop3Button = new JButton("Workshop 3");
+            JButton workshop4Button = new JButton("Workshop 4");
+            JButton workshop5Button = new JButton("Workshop 5");
 
             // Add ActionListener to button
             workshop1Button.addActionListener(new ActionListener() {
@@ -39,9 +43,37 @@ public class WorkshopsOnly extends JFrame {
                     new Workshop1(); // Open Workshop1 window
                 }
             });
+            workshop2Button.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    new Workshop2(); // Open Workshop1 window
+                }
+            });
+            workshop3Button.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    new Workshop3(); // Open Workshop1 window
+                }
+            });
+            workshop4Button.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    new Workshop4(); // Open Workshop1 window
+                }
+            });
+            workshop5Button.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    new Workshop5(); // Open Workshop1 window
+                }
+            });
 
             // Add button to panel and panel to layout
             buttonPanel.add(workshop1Button);
+            buttonPanel.add(workshop2Button);
+            buttonPanel.add(workshop3Button);
+            buttonPanel.add(workshop4Button);
+            buttonPanel.add(workshop5Button);
             add(buttonPanel, BorderLayout.SOUTH);
         }
 
