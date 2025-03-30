@@ -117,9 +117,15 @@ class DrawingPanel extends JPanel implements ActionListener {
                 new ProjectOnly(); // Assuming ProjectOnly extends JFrame
             });
         } else if (s.equals("Workshops Only")) {
-            story1 = "You chose Workshops Only.";
+            // Open Workshops Only window
+            SwingUtilities.invokeLater(() -> {
+                new WorkshopsOnly();
+            });
         } else if (s.equals("Project and Workshops")) {
-            story1 = "You chose both Project and Workshops.";
+            // Open ProjandandWork window
+            SwingUtilities.invokeLater(() -> {
+                new ProjandWork();
+            });
         }
 
         repaint(); // Refresh panel to show new text
