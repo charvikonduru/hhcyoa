@@ -71,10 +71,12 @@ class DrawingPanel extends JPanel implements ActionListener {
         g.setColor(Color.WHITE);
         g.setFont(new Font("Serif", Font.BOLD, 20));
         g.drawString("Choose Your Own Adventure: HooHacks", 10, 40);
+        g.setFont(new Font("Serif", Font.PLAIN, 12));
+        g.drawString("Note: Expand to full screen to play.", 10, 60);
         g.setFont(new Font("Serif", Font.PLAIN, 15));
 
         int x = 10;
-        int y = 80;
+        int y = 100;
         int maxWidth = getWidth() - 50; // Max width for text wrapping
 
         List<String> lines = wrapText(story1, g, maxWidth);
@@ -110,11 +112,11 @@ class DrawingPanel extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         String s = e.getActionCommand();
         if (s.equals("Project Only")) {
-            story1 = "You chose Project Only. This text should automatically wrap to fit within the window.";
+            story1 = "You chose Project Only.";
         } else if (s.equals("Workshops Only")) {
-            story1 = "You chose Workshops Only. If the text is long enough, it will wrap to the next line.";
+            story1 = "You chose Workshops Only.";
         } else if (s.equals("Project and Workshops")) {
-            story1 = "You chose both Project and Workshops. The text-wrapping method makes sure all text stays within the window.";
+            story1 = "You chose both Project and Workshops.";
         }
 
         repaint(); // Refresh panel to show new text
