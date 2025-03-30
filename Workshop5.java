@@ -22,7 +22,7 @@ public class Workshop5 extends JFrame {
                 "and collaborate with fellow participants. Get ready for an engaging experience!";
 
         public DrawingPanel() {
-            setBackground(new Color(169, 117, 156)); // Set background color
+            setBackground(new Color(255, 126, 0)); // Set background color
         }
 
         @Override
