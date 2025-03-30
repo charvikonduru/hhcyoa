@@ -18,8 +18,9 @@ public class Workshop1 extends JFrame {
 
     // Inner JPanel class for drawing content
     class DrawingPanel extends JPanel {
-        private String story1 = "Welcome to Workshop 1! In this session, you will learn new coding techniques " +
-                "and collaborate with fellow participants. Get ready for an engaging experience!";
+        private String story1 = "In this session, you learned about the best collaboration " +
+                "practices for coding. Collaboration is essential for many programming tasks, so you're " +
+                "glad you went!";
 
         public DrawingPanel() {
             setBackground(new Color(128, 0, 32)); // Set background color
