@@ -23,8 +23,11 @@ public class Beginning {
 
 class DrawingPanel extends JPanel implements ActionListener {
     private String story1 = "You are a college student participating in the HooHacks 2025 Hackathon. " +
-            "You are extremely excited, and are eagerly awaiting for the time when you can work on your " +
-            "very own project to submit for the competition.";
+            "You are extremely excited, and are eagerly awaiting the time that the hackathon begins. " +
+            "Once the hackathon begins, you look at the " +
+            "schedule on the HooHacks website, and notice that there are many fun workshops being offered! " +
+            "You can just work on the project for the competition, or you can attend the workshops as well. " +
+            "But ";
 
     public DrawingPanel() {
         setLayout(new BorderLayout()); // Use BorderLayout
