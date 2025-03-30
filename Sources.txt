@@ -1,1 +1,15 @@
-Sources Cited:
+Sources Linked:
+
+https://docs.oracle.com/javase/8/docs/api/java/awt/Graphics.html
+
+https://docs.oracle.com/javase/8/docs/api/javax/swing/package-summary.html
+
+https://www.rapidtables.com/web/color/Gold_Color.html
+
+https://www.geeksforgeeks.org/what-is-java-awt-graphics/
+
+https://www.geeksforgeeks.org/difference-between-awt-and-swing-in-java/
+
+https://stackoverflow.com/questions/6567870/what-does-swingutilities-invokelater-do
+
+https://docs.oracle.com/javase/8/docs/api/javax/swing/SwingUtilities.html
