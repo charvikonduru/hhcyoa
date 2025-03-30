@@ -27,7 +27,14 @@ class DrawingPanel extends JPanel implements ActionListener {
             "Once the hackathon begins, you look at the " +
             "schedule on the HooHacks website, and notice that there are many fun workshops being offered! " +
             "You can just work on the project for the competition, or you can attend the workshops as well. " +
-            "But ";
+            "You continue looking through the list of workshops, and realize that a lot of them look very " +
+            "exciting. But, you have to work on the project, right? You can't attend them all. However, your " +
+            "friend then comes and tells you that if you wanted, you can just attend the workshops if you didn't mind " +
+            "losing your chance to win prizes for the project. But, winning a prize sure sounds nice. Now, you " +
+            "have three options: you can dedicate all " +
+            "your time to the project to maximize your chances of winning a prize, you can skip the project " +
+            "and only go for the workshops (after all, you can always just do a personal project later), " +
+            "or you can work on the project and attend some workshops while you're at it. What will you choose?";
 
     public DrawingPanel() {
         setLayout(new BorderLayout()); // Use BorderLayout
