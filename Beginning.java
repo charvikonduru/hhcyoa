@@ -112,7 +112,10 @@ class DrawingPanel extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         String s = e.getActionCommand();
         if (s.equals("Project Only")) {
-            story1 = "You chose Project Only.";
+            // Open ProjectOnly window
+            SwingUtilities.invokeLater(() -> {
+                new ProjectOnly(); // Assuming ProjectOnly extends JFrame
+            });
         } else if (s.equals("Workshops Only")) {
             story1 = "You chose Workshops Only.";
         } else if (s.equals("Project and Workshops")) {
