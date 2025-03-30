@@ -17,9 +17,10 @@ public class ProjectOnly extends JFrame {
     }
 
     class DrawingPanel extends JPanel {
-        private String story1 = "You are now in the Project Only zone! " +
-                "You can stay here as long or as little as you want. " +
-                "The only rule here is to lock in, and work on your project.";
+        private String story1 = "You really badly want to win a prize, more so than you want to attend the " +
+                "workshops. You fill yourself up with food and caffeine, and get to work. With the 24 hours that " +
+                "you have, you manage to create a project so amazing that you win Best Overall. You get an " +
+                "amazing prize, and go home with a grin from ear to ear, proud of yourself for what you've accomplished. THE END";
 
         public DrawingPanel() {
             setBackground(new Color(55, 98, 14));
@@ -31,7 +32,7 @@ public class ProjectOnly extends JFrame {
 
             g.setColor(Color.WHITE);
             g.setFont(new Font("Serif", Font.BOLD, 20));
-            g.drawString("Welcome to the Project-Only path!", 10, 40);
+            g.drawString("You chose to only work on the project.", 10, 40);
 
             g.setFont(new Font("Serif", Font.PLAIN, 15));
 
