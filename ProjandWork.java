@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +26,34 @@ public class ProjandWork extends JFrame{
                 "friends, and a lot of wonderful memories. But, all that being said, what workshops DID you attend?";
 
         public DrawingPanel() {
+            setLayout(new BorderLayout()); // Ensure proper layout
             setBackground(new Color(169, 117, 156));
+            // Panel for buttons (placed at the bottom)
+            JPanel buttonPanel = new JPanel();
+            buttonPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+            buttonPanel.setOpaque(false);
+
+            JButton workshop1Button = new JButton("Workshop 1");
+            JButton workshop2Button = new JButton("Workshop 2");
+
+            // Add ActionListener to button
+            workshop1Button.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    new Workshop1(); // Open Workshop1 window
+                }
+            });
+            workshop2Button.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    new Workshop2(); // Open Workshop1 window
+                }
+            });
+
+            // Add button to panel and panel to layout
+            buttonPanel.add(workshop1Button);
+            buttonPanel.add(workshop2Button);
+            add(buttonPanel, BorderLayout.SOUTH);
         }
 
         @Override
