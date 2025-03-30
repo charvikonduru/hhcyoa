@@ -1,13 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WorkshopsOnly extends JFrame {
-    public WorkshopsOnly() {
-        setTitle("Workshops Only");
+public class Workshop1 extends JFrame {
+    public Workshop1() {
+        setTitle("Workshop 1");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(400, 400);
 
@@ -18,31 +16,13 @@ public class WorkshopsOnly extends JFrame {
         setVisible(true);
     }
 
+    // Inner JPanel class for drawing content
     class DrawingPanel extends JPanel {
-        private String story1 = "You are now in the Workshops Only zone! ";
+        private String story1 = "Welcome to Workshop 1! In this session, you will learn new coding techniques " +
+                "and collaborate with fellow participants. Get ready for an engaging experience!";
 
         public DrawingPanel() {
-            setLayout(new BorderLayout()); // Ensure proper layout
-            setBackground(new Color(210, 136, 76));
-
-            // Panel for buttons (placed at the bottom)
-            JPanel buttonPanel = new JPanel();
-            buttonPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
-            buttonPanel.setOpaque(false);
-
-            JButton workshop1Button = new JButton("Workshop 1");
-
-            // Add ActionListener to button
-            workshop1Button.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    new Workshop1(); // Open Workshop1 window
-                }
-            });
-
-            // Add button to panel and panel to layout
-            buttonPanel.add(workshop1Button);
-            add(buttonPanel, BorderLayout.SOUTH);
+            setBackground(new Color(169, 117, 156)); // Set background color
         }
 
         @Override
@@ -51,7 +31,7 @@ public class WorkshopsOnly extends JFrame {
 
             g.setColor(Color.WHITE);
             g.setFont(new Font("Serif", Font.BOLD, 20));
-            g.drawString("Welcome to the Workshops-Only path!", 10, 40);
+            g.drawString("Welcome to Workshop 1!", 10, 40);
 
             g.setFont(new Font("Serif", Font.PLAIN, 15));
 
