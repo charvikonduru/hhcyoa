@@ -17,7 +17,11 @@ public class ProjandWork extends JFrame{
     }
 
     class DrawingPanel extends JPanel {
-        private String story1 = "You are now in the Projects and Workshops zone! ";
+        private String story1 = "You can't give up either one, so why not do both? They're both available " +
+                "as opportunities after all. You work on your project, and attend a couple workshops. Your " +
+                "project was great, but unfortunately didn't win any prizes. That's okay though! You had a lot " +
+                "of fun making the project, and you really enjoyed the workshops you attended. You made some new " +
+                "friends, and a lot of wonderful memories. But, all that being said, what workshops DID you attend?";
 
         public DrawingPanel() {
             setBackground(new Color(169, 117, 156));
@@ -29,7 +33,7 @@ public class ProjandWork extends JFrame{
 
             g.setColor(Color.WHITE);
             g.setFont(new Font("Serif", Font.BOLD, 20));
-            g.drawString("Welcome to the Projects and Workshops path!", 10, 40);
+            g.drawString("You chose to do both.", 10, 40);
 
             g.setFont(new Font("Serif", Font.PLAIN, 15));
 

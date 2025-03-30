@@ -27,7 +27,7 @@ class DrawingPanel extends JPanel implements ActionListener {
             "Once the hackathon begins, you look at the " +
             "schedule on the HooHacks website, and notice that there are many fun workshops being offered! " +
             "You can just work on the project for the competition, or you can attend the workshops as well. " +
-            "You continue looking through the list of workshops, and realize that a lot of them look very " +
+            "You continue looking through the list of workshops, and realize that they all look very " +
             "exciting. But, you have to work on the project, right? You can't attend them all. However, your " +
             "friend then comes and tells you that if you wanted, you can just attend the workshops if you didn't mind " +
             "losing your chance to win prizes for the project. But, winning a prize sure sounds nice. Now, you " +
