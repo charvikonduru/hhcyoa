@@ -73,6 +73,7 @@ class DrawingPanel extends JPanel implements ActionListener {
         g.drawString("Choose Your Own Adventure: HooHacks", 10, 40);
         g.setFont(new Font("Serif", Font.PLAIN, 12));
         g.drawString("Instructions: To play, expand all windows generated to full screen.", 10, 60);
+        g.drawString("Close windows when you are done with them.", 10, 70);
         g.setFont(new Font("Serif", Font.PLAIN, 15));
 
         int x = 10;
