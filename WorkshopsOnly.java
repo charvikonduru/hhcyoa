@@ -19,7 +19,10 @@ public class WorkshopsOnly extends JFrame {
     }
 
     class DrawingPanel extends JPanel {
-        private String story1 = "You are now in the Workshops Only zone! ";
+        private String story1 = "Those workshops were just too interesting for you to resist. " +
+                "You can just use your current project ideas for personal projects later. Plus, " +
+                "cash and prizes are worth nothing when compared to the knowledge and experiences the workshops " +
+                "can give you. There are a total of five workshops being offered. You make your way through each one...";
 
         public DrawingPanel() {
             setLayout(new BorderLayout()); // Ensure proper layout
@@ -83,7 +86,7 @@ public class WorkshopsOnly extends JFrame {
 
             g.setColor(Color.WHITE);
             g.setFont(new Font("Serif", Font.BOLD, 20));
-            g.drawString("Welcome to the Workshops-Only path!", 10, 40);
+            g.drawString("You chose to only attend the workshops.", 10, 40);
 
             g.setFont(new Font("Serif", Font.PLAIN, 15));
 
